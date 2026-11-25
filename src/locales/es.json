@@ -1,0 +1,11 @@
+{
+  "app": { "title": "HB-ECOM Tienda" },
+  "nav": { "catalog": "Catálogo", "cart": "Carrito" },
+  "footer": { "rights": "SW608 · UNI · 2026-II" },
+  "home": { "title": "Destacados" },
+  "catalog": { "title": "Catálogo", "empty": "Sin resultados" },
+  "product": { "add": "Agregar al carrito", "reviews": "Reseñas" },
+  "cart": { "title": "Tu carrito", "empty": "Tu carrito está vacío", "total": "Total", "checkout": "Ir a pagar" },
+  "checkout": { "title": "Checkout", "fullName": "Nombre completo", "address": "Dirección", "pay": "Pagar (simulado)" },
+  "order": { "thanks": "¡Gracias por tu compra!", "number": "N° de pedido" }
+}

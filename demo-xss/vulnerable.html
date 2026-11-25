@@ -1,0 +1,5 @@
+<ul id="r"></ul>
+<script>
+  const reviews = [{ author: "Ana", comment: "<img src=x onerror=alert('XSS')>" }];
+  r.innerHTML = reviews.map(x => `<li><b>${x.author}</b>: ${x.comment}</li>`).join('');
+</script>

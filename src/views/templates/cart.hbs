@@ -1,0 +1,4 @@
+<h1>{{t "cart.title"}}</h1>
+{{#each cart.items}}<div class="cart__row">{{name}} x{{qty}} — {{money subtotal ../cart.currency}}</div>{{else}}<p>{{t "cart.empty"}}</p>{{/each}}
+<p>{{t "cart.total"}}: {{money cart.total cart.currency}}</p>
+<a href="/checkout">{{t "cart.checkout"}}</a>

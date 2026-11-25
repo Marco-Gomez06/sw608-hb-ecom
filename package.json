@@ -1,0 +1,26 @@
+{
+  "name": "sw608-hb-ecom",
+  "version": "0.1.0",
+  "description": "HB-ECOM: e-commerce isomórfico con Handlebars como DSL (SW608 - UNI)",
+  "main": "src/server/app.js",
+  "scripts": {
+    "dev": "node --watch src/server/app.js",
+    "start": "node src/server/app.js",
+    "build:templates": "node scripts/build-templates.js",
+    "build": "npm run build:templates",
+    "seed": "node scripts/seed.js",
+    "test": "jest --coverage",
+    "lint": "eslint src tests scripts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "handlebars": "^4.7.8",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

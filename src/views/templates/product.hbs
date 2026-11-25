@@ -1,0 +1,6 @@
+<h1>{{product.name}}</h1>
+<p>{{truncate product.description 200}}</p>
+<p>{{money product.price product.currency}}</p>
+<button data-add-to-cart="{{product._id}}">{{t "product.add"}}</button>
+<h2>{{t "product.reviews"}}</h2>
+<ul>{{#each product.reviews}}{{> review this}}{{/each}}</ul>

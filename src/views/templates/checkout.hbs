@@ -1,0 +1,7 @@
+<h1>{{t "checkout.title"}}</h1>
+<form id="checkout-form" method="post" action="/checkout">
+  <input name="fullName" placeholder="{{t 'checkout.fullName'}}" required>
+  <input name="address" placeholder="{{t 'checkout.address'}}" required>
+  <input name="card" placeholder="4242 4242 4242 4242" required>
+  <button type="submit">{{t "checkout.pay"}}</button>
+</form>

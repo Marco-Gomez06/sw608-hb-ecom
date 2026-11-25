@@ -1,0 +1,12 @@
+services:
+  mongo:
+    image: mongo:7
+    volumes: [mongo_data:/data/db]
+  web:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      MONGO_URI: mongodb://mongo:27017/hb_ecom
+    depends_on: [mongo]
+volumes:
+  mongo_data:
